@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d564e5381e6cfe7844c4723e468e62f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d564e5381e6cfe7844c4723e468e62f1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d564e5381e6cfe7844c4723e468e62f1 = L.map(
+                "map_d564e5381e6cfe7844c4723e468e62f1",
+                {
+                    center: [37.566, 126.977],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a816e64ff57d7abc5d0d3f4392526c2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0a816e64ff57d7abc5d0d3f4392526c2.addTo(map_d564e5381e6cfe7844c4723e468e62f1);
+        
+    
+            var marker_685cbe4db2edeced1147afd6ed9257cc = L.marker(
+                [37.5796, 126.977],
+                {
+}
+            ).addTo(map_d564e5381e6cfe7844c4723e468e62f1);
+        
+    
+            var icon_9b1a593afe8074b701d331ad78fb3b6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_421e36ee8de9f77ce6a9621f5601275b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d6425295f2f13ccbe9e7a1b5d66a6923 = $(`<div id="html_d6425295f2f13ccbe9e7a1b5d66a6923" style="width: 100.0%; height: 100.0%;"><b>경복궁</b><br>조선의 법궁</div>`)[0];
+                popup_421e36ee8de9f77ce6a9621f5601275b.setContent(html_d6425295f2f13ccbe9e7a1b5d66a6923);
+            
+        
+
+        marker_685cbe4db2edeced1147afd6ed9257cc.bindPopup(popup_421e36ee8de9f77ce6a9621f5601275b)
+        ;
+
+        
+    
+    
+            marker_685cbe4db2edeced1147afd6ed9257cc.bindTooltip(
+                `<div>
+                     경복궁
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_685cbe4db2edeced1147afd6ed9257cc.setIcon(icon_9b1a593afe8074b701d331ad78fb3b6d);
+            
+    
+            var marker_358d68aefb15e4591dba58e24519b96f = L.marker(
+                [37.5512, 126.9882],
+                {
+}
+            ).addTo(map_d564e5381e6cfe7844c4723e468e62f1);
+        
+    
+            var icon_360258f6ea25a26c1e32b74d90c07a2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b7c9de8e88f8b16ab64f718cd6904f6 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9feb693921e28c8cae45bc8ee2fa0ccf = $(`<div id="html_9feb693921e28c8cae45bc8ee2fa0ccf" style="width: 100.0%; height: 100.0%;"><b>남산타워</b><br>N서울타워</div>`)[0];
+                popup_5b7c9de8e88f8b16ab64f718cd6904f6.setContent(html_9feb693921e28c8cae45bc8ee2fa0ccf);
+            
+        
+
+        marker_358d68aefb15e4591dba58e24519b96f.bindPopup(popup_5b7c9de8e88f8b16ab64f718cd6904f6)
+        ;
+
+        
+    
+    
+            marker_358d68aefb15e4591dba58e24519b96f.bindTooltip(
+                `<div>
+                     남산타워
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_358d68aefb15e4591dba58e24519b96f.setIcon(icon_360258f6ea25a26c1e32b74d90c07a2d);
+            
+    
+            var marker_d3e99fc2e8a0041b8adcca8cb0a56874 = L.marker(
+                [37.5741, 126.9862],
+                {
+}
+            ).addTo(map_d564e5381e6cfe7844c4723e468e62f1);
+        
+    
+            var icon_5fa510cb58c22c9e8d81f86a64e5f48d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83c5321d28631b77fa974a7f7528e0d4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_abadb0f466aac5fdf9c12848b0830a0d = $(`<div id="html_abadb0f466aac5fdf9c12848b0830a0d" style="width: 100.0%; height: 100.0%;"><b>인사동</b><br>전통문화거리</div>`)[0];
+                popup_83c5321d28631b77fa974a7f7528e0d4.setContent(html_abadb0f466aac5fdf9c12848b0830a0d);
+            
+        
+
+        marker_d3e99fc2e8a0041b8adcca8cb0a56874.bindPopup(popup_83c5321d28631b77fa974a7f7528e0d4)
+        ;
+
+        
+    
+    
+            marker_d3e99fc2e8a0041b8adcca8cb0a56874.bindTooltip(
+                `<div>
+                     인사동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3e99fc2e8a0041b8adcca8cb0a56874.setIcon(icon_5fa510cb58c22c9e8d81f86a64e5f48d);
+            
+</script>
+</html>
