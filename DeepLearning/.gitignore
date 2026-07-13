@@ -1,1 +1,4 @@
 *.png
+*.jpg
+/Data/best_cnn_chair&labtop_model.keras
+/Data/best_cnn_face_model.keras
